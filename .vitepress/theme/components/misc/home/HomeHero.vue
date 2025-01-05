@@ -137,10 +137,14 @@ const reveal = (sectionId: 'win7simu' | 'brick1100' = 'win7simu') => {
     display: none;
 }
 
+.section-right>div {
+    max-width: 600px;
+    height: 15rem;
+}
+
 .section-right button {
     width: 100%;
-    height: 15rem;
-    max-width: 600px;
+    height: 100%;
     background: rgba(0, 0, 0, 0.1);
     color: var(--vp-c-bg);
     display: flex;

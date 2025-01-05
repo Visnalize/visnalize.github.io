@@ -30,6 +30,19 @@ const configFunction: UserConfigFn<DefaultTheme.Config> = ({ mode }) => {
 
     sitemap: {
       hostname: "https://visnalize.com",
+      xmlns: {
+        news: false,
+        video: false,
+        image: false,
+        xhtml: true,
+      },
+      transformItems: (items) => {
+        items.forEach((item) => {
+          item.lastmod = item.lastmod || new Date().toISOString();
+          item.changefreq = "weekly";
+        });
+        return items;
+      },
     },
 
     head,
