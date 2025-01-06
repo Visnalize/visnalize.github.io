@@ -1,4 +1,4 @@
-const DOMAIN = "visnalize.com";
+const DOMAIN = "v1.visnalize.com";
 const ORIGIN = `https://${DOMAIN}`;
 
 module.exports = {
