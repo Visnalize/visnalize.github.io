@@ -3,7 +3,9 @@ export const isExternal = (url: string) => {
 };
 
 export const fixCommentId = (url: string) => {
-  return url.replace("themestudio.html", "themestudio/");
+  let newUrl = url;
+  if (!newUrl.endsWith(".html")) newUrl += ".html";
+  return newUrl.replace("themestudio.html", "themestudio/");
 };
 
 export function shortenNumber(num: number, digits = 1) {

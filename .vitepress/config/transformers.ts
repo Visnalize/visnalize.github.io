@@ -52,9 +52,7 @@ export const transformPageData: UserConfig["transformPageData"] = async (
     data.frontmatter.sidebar = false;
   }
 
-  const transformedPath = data.relativePath
-    .replace(/\.md$/, ".html")
-    .replace(/index\.html$/, "");
+  const transformedPath = data.relativePath.replace(/(\.md|index\.html)$/, "");
   const canonicalUrl = `${ORIGIN}/${transformedPath}`;
   const { content } = matter.read(data.filePath);
 

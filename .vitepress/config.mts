@@ -55,6 +55,8 @@ const configFunction: UserConfigFn<DefaultTheme.Config> = ({ mode }) => {
 
     srcExclude: ["**/README.md"],
 
+    cleanUrls: true,
+
     themeConfig: {
       // https://vitepress.dev/reference/default-theme-config
 
