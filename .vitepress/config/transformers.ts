@@ -20,7 +20,7 @@ export const transformPageData: UserConfig["transformPageData"] = async (
   if (data.params?.tag) {
     const { tag } = data.params;
     data.title = `Posts with tag "${tag}"`;
-    data.description = `Here you can find all posts with the tag "${tag}". Discover helpful insights, sharing, tips and tricks on various topics from Visnalize.`;
+    data.description = `Here you can find all posts with tag: ${tag}. Discover helpful insights, sharing, tips and tricks on various topics from Visnalize.`;
   }
 
   // simulated app page
@@ -52,7 +52,7 @@ export const transformPageData: UserConfig["transformPageData"] = async (
     data.frontmatter.sidebar = false;
   }
 
-  const transformedPath = data.relativePath.replace(/(\.md|index\.html)$/, "");
+  const transformedPath = data.relativePath.replace(/((index)?\.md)$/, "");
   const canonicalUrl = `${ORIGIN}/${transformedPath}`;
   const { content } = matter.read(data.filePath);
 
