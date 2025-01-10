@@ -13,7 +13,7 @@
             </div>
         </div>
         <HomeIntroSection app="win7simu" title="Win7 Simu">
-            A recreation of Windows 7, once the best operating system Microsoft has ever made. Experience it right from
+            A recreation of Windows 7, feature-rich and highly customizable. Experience it right from
             your web browser or mobile device.
         </HomeIntroSection>
     </section>

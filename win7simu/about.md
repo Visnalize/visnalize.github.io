@@ -13,9 +13,9 @@ outline: false
 
 ## Features
 
-As a simulator of Windows 7, it attempts to simulate every aspect of Windows 7, from the most familiar programs of Windows 7 such as Calculator, Command Prompt, the striking glass effect of the Aero themes, to the exclusive Desktop Gadgets only available in Windows Vista and 7. The simulator also comes with some other cool and nostalgic Windows themes designed on the core of Windows 7 such as Windows 2000, Windows XP, Windows 8...
+As a simulator of Windows 7, it attempts to simulate every aspect of Windows 7, from the most familiar programs of Windows 7 such as Calculator, Command Prompt, the striking glass effect of the Aero themes, to the exclusive Desktop Gadgets only available in Windows Vista and 7. The simulator also comes with various cool and nostalgic themes designed on the core of Windows 7, such as Windows 3.1, Windows XP, Windows 10, MacOS, Ubuntu, [and more](./simulated/personalize.md).
 
-There's also an exclusive [Theme Studio](./themestudio.md) app that allows users to create their own custom themes to transform Win7 Simu into their unique creation, and share with others.
+An exclusive [Theme Studio](./themestudio.md) app is also available for you to create your own custom themes, transform Win7 Simu into unique creations, and share with others.
 
 ::: tip Tip
 Refer to the [Simulated apps](./simulated.md) page for a list of all available apps. For a list of features added through versions, refer to [Changelog](./changelog.md).

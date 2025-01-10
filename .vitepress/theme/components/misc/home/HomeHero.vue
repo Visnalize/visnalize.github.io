@@ -15,9 +15,7 @@
                 </Motion>
                 <Motion as="p" :initial="{ opacity: 0 }" :animate="{ opacity: 1 }"
                     :transition="{ duration: 0.6, delay: 0.8 }">
-                    Visnalize brings retro products back to life with creative ideas and modern technology.
-                    Miss the operating systems that you grew up with? Want to experience the old-school brick
-                    phone again? They are at your fingertips, literally.
+                    {{ intro }}
                 </Motion>
             </div>
 
@@ -57,6 +55,9 @@ const heroStyle = computed(() => ({
     filter: `blur(${transform(scrollProgressRef.value, [0.5, 0.8], [0, 6])}px)`,
     display: transform(scrollProgressRef.value, [0.9, 1], ['', 'none'])
 }))
+
+const sharedIntro = 'Miss the operating systems that you grew up with? Want to experience the old-school brickphone again?'
+const intro = computed(() => xl.value ? `Visnalize brings retro products back to life with creative ideas and modern technology. ${sharedIntro} They are at your fingertips, literally.` : `${sharedIntro} Visnalize got you covered.`)
 
 const titleTransition: AnimateOptions = {
     staggerChildren: 0.2,
