@@ -1,5 +1,5 @@
 <template>
-    <form @submit.prevent="send" :class="{ animated: animateProp ?? false }">
+    <form @submit.prevent="send">
         <Motion :variants="variants(0)" :animate="animate">
             <input type="text" name="subject" placeholder="Subject" required />
         </Motion>
@@ -26,7 +26,7 @@ const shouldAnimate = computed(() => animateProp ?? true);
 const animate = computed(() => shouldAnimate.value ? 'animate' : 'initial');
 
 const variants = (index: number): Variants => ({
-    initial: { opacity: 0, scale: 0.9 },
+    initial: { opacity: 0, scale: 0.95 },
     animate: { opacity: 1, scale: 1, transition: { delay: index * 0.1 } },
 })
 
@@ -47,10 +47,6 @@ form {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-}
-
-.animated {
-    max-width: 680px;
 }
 
 form>div:last-child {

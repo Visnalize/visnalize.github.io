@@ -3,8 +3,8 @@
         <template #title>Want to talk?</template>
         <template #caption>If you have any questions, feedback, or just want to chat, feel free to reach out</template>
 
-        <div ref="form" class="form">
-            <ContactForm :animate="inView" />
+        <div ref="form" class="form-container">
+            <ContactForm class="form" :animate="inView" />
         </div>
     </HomeSection>
 </template>
@@ -21,10 +21,14 @@ const inView = useSectionInView(form);
 
 <style scoped>
 @media (min-width: 640px) {
-    .form {
+    .form-container {
         border: 1px solid var(--vp-c-default-1);
         border-radius: 1rem;
         padding: 3rem;
+    }
+
+    .form {
+        max-width: 680px;
     }
 }
 </style>
