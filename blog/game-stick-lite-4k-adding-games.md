@@ -35,20 +35,32 @@ The approach shared in this post appears to be only applicable to some versions 
 
 ![Game ROMs and cover images](./img/game-stick-lite-4k-adding-games/roms.jpg)
 
+_Example: I downloaded a GBA ROM of the game "Final Fantasy Tactics Advance" and its cover image. The ROM file is named `Final Fantasy - Tactics Advance.GBA` and the cover image is also named `Final Fantasy - Tactics Advance.png`._
+
 ### 2. Access the game stick
 
 - Remove the MicroSD card from the game stick
 - Insert the MicroSD card into your computer or laptop using a card reader.
+
+:::danger Warning
+Do not format the MicroSD card if you're prompted to do so as it will erase all the games and data on the card. Instead, cancel the prompt and proceed if possible, otherwise try reinserting the card.
+:::
+
 - At the root of the SD card, you will see a `game` folder where all the games are stored. Games are grouped by the console they belong to. For instance:
   - The `fc` folder: NES games
   - The `gbc` folder: GameboyColor games
   - The `atari` folder: Atari games
 
+![The game folder](./img/game-stick-lite-4k-adding-games/game-folder.png)
+
+_Example: The `game` folder's content as seen on my SD card, with the console folders and the `games.db` file._
+
 ### 3. Add your games
 
-- Copy your game ROMs (and their cover images) to the respective folders. Note that the ROM format should match with what is already available in the folder.
+- Copy your game ROMs (and their cover images) to the respective folders.
+  - _Example: My GBA ROM file and its cover image were copied to the `gba` folder._
 - Install [DB4S](https://sqlitebrowser.org/) (SQLite Database Browser) on your computer or laptop.
-- Back to the root of the SD card, open the `games.db` file with DB4S
+- Back to the `game` folder of the SD card, open the `games.db` file with DB4S
   - If using a smartphone as a card reader, you might have to copy the file to your computer first.
 
 - Here, a list of tables in the game database will be displayed, you only need to care about the tables `tbl_en` and `tbl_game` where you will modify to add your games.
