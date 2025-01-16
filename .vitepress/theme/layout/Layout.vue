@@ -39,8 +39,9 @@ const attachZoom = () => {
     const isBlogPost = route.path.startsWith('/blog/') && !route.path.includes('/tag');
     const isResource = route.path.startsWith('/resources/');
     const isThemeStudio = /^\/win7simu\/themestudio\/?/.test(route.path);
+    const isBuilders = /^\/brick1100\/builders\/?/.test(route.path);
 
-    if (isBlogPost || isResource || isThemeStudio) {
+    if (isBlogPost || isResource || isThemeStudio || isBuilders) {
         selector = '.main img';
     } else {
         selector = '[data-zoomable]';

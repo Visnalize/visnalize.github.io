@@ -46,7 +46,30 @@ const sidebar: DefaultTheme.Config["sidebar"] = {
       ],
     },
     {
-      items: [Brick1100.Games, Brick1100.DeepLinks, Brick1100.Builders],
+      items: [Brick1100.Games, Brick1100.DeepLinks],
+    },
+    {
+      text: "Builders",
+      collapsed: false,
+      items: [
+        Brick1100.BuildersIntro,
+        {
+          text: "Building an app",
+          link: "/brick1100/builders/building-app",
+        },
+        {
+          text: "Building a game",
+          link: "/brick1100/builders/building-game",
+        },
+        {
+          text: "Using the Previewer",
+          link: "/brick1100/builders/using-previewer",
+        },
+        {
+          text: "Best practices",
+          link: "/brick1100/builders/best-practices",
+        },
+      ],
     },
   ],
   "/blog/": getBlogFiles()

@@ -46,6 +46,11 @@ export const Win7Simu = {
   ThemeStudioIntro: { ...ThemeStudio, text: "Introduction" },
 } satisfies Record<string, Link>;
 
+const Builders: Link = {
+  text: "Builders",
+  link: "/brick1100/builders",
+};
+
 export const Brick1100 = {
   Index: Brick1100About,
   About: {
@@ -72,10 +77,8 @@ export const Brick1100 = {
     text: "Deep Links",
     link: "/brick1100/deep-links",
   },
-  Builders: {
-    text: "Builders",
-    link: "/brick1100/builders",
-  },
+  Builders,
+  BuildersIntro: { ...Builders, text: "Introduction" },
 } satisfies Record<string, Link>;
 
 export const Resources = {
