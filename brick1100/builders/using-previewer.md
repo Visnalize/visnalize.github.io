@@ -9,6 +9,8 @@ After building your app/game, it's possible to see how it looks and works on [Br
 
 ![Local server running](./img/live-server-running.png)
 
+<SponsorAd />
+
 ## 2. Expose your app/game to the internet
 
 For this, we will use [localhost.run](https://localhost.run/), a tool that creates a tunnel to your local server, allowing you to expose your app/game to the internet.

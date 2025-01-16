@@ -12,7 +12,8 @@ This Password Generator app will generate a random password based on the user's 
     <source src="./img/pwd-generator.mp4" type="video/mp4">
 </video>
 
-<!-- #region setup -->
+<SponsorAd />
+
 ## 1. Setup
 
 ### 1.1. Tool
@@ -46,7 +47,7 @@ This Password Generator app will generate a random password based on the user's 
 
 - Once the repository is cloned, you will see the source code in your Visual Studio Code.
 
-<!-- #endregion setup -->
+<SponsorAd />
 
 ## 2. Build
 
@@ -252,6 +253,8 @@ function stop(data) {
 :::tip [Best practice](./best-practices.md)
 When writing app logic with JS, it is recommended to use the __ES5 syntax__ to ensure your app works on a wider range of devices, especially older devices that may not have the latest JavaScript features.
 :::
+
+<SponsorAd />
 
 ### 2.3. App styling (CSS file)
 

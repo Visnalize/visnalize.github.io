@@ -1,8 +1,8 @@
 <template>
     <NotFound v-if="page.isNotFound" />
     <DefaultTheme.Layout v-else>
-        <template #aside-bottom>
-            <AsideBottom />
+        <template #aside-top>
+            <AsideTop />
         </template>
         <template #doc-after>
             <DocAfter />
@@ -24,7 +24,7 @@ import mediumZoom, { ZoomSelector } from 'medium-zoom';
 import { useData, useRoute } from 'vitepress';
 import DefaultTheme from 'vitepress/theme';
 import { nextTick, onMounted, watch } from 'vue';
-import AsideBottom from './AsideBottom.vue';
+import AsideTop from './AsideTop.vue';
 import DocAfter from './DocAfter.vue';
 import DocBefore from './DocBefore.vue';
 import DocFooterBefore from './DocFooterBefore.vue';

@@ -1,5 +1,5 @@
 <template>
-    <div class="bottom-aside">
+    <div class="top-aside">
         <SponsorAd v-if="enableAds" :format="outline ? 'rectangle' : ['rectangle', 'vertical']" :key="route.path" />
     </div>
 </template>

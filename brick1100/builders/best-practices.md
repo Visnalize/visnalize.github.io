@@ -8,6 +8,8 @@ This is a list of best practices to follow when building games/apps for [Brick 1
 - <Badge text="Recommended" type="tip" />: These practices are recommended to be followed to ensure good quality and compatibility.
 - <Badge text="Optional" type="info" />: These practices are optional but can help enhance your development experience.
 
+<SponsorAd />
+
 ## List of best practices
 
 ### Use Bridge 1100 <Badge text="Essential" type="danger" />

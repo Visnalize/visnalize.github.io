@@ -42,6 +42,6 @@ const className = normalizedFormat.map((f) => first(f)).join('-') + '-ad'
 }
 
 .r-ad {
-    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 </style>
