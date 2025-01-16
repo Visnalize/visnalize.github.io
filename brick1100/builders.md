@@ -4,11 +4,9 @@ description: Discover how to build your own apps and games on Brick 1100. Develo
 
 # Brick 1100 Builders
 
-![Brick 1100 Builder achievement](./builders/cover.jpg)
+![Brick 1100 Builder achievement](./builders/img/cover.jpg)
 
 __Builders__ is a short name for an advanced program available in [Brick 1100](./about.md). It offers a set of tools and features that allow you to create your own apps and games, and seamlessly integrate them with Brick 1100. You can publish your creations and share with other Brick 1100 users, and even earn rewards for your work. The owners of these creations are referred to as _builders_.
-
-This page will guide you through the process of building and publishing your apps and games on Brick 1100.
 
 ## Understanding how it works
 
@@ -26,40 +24,59 @@ The diagram above illustrates how your apps and games are integrated with Brick 
 
 ### Bridge 1100
 
+> _Learn more: [Bridge 1100 GitHub repository](https://github.com/Visnalize/bridge-1100)_
+
 Bridge 1100 is a small JavaScript utility that acts as a bridge between your apps/games and Brick 1100. It provides an API that allows your creation to exchange events and data from and to Brick 1100 such as `start`, `stop`, `keypress`, `numpress` etc. In addition, it comes with a set of predefined styles to make your creation fit seamlessly with Brick 1100's interface effortlessly.
 
-Head over to the [Bridge 1100 GitHub repository](https://github.com/Visnalize/bridge-1100) to learn more about it.
+### Previewer
+
+> _Learn more: [Using Brick 1100 Previewer](./builders/using-previewer.md)_
+
+Previewer is a tool that allows you to test your apps and games on Brick 1100 prior to publishing. It leverages Bridge 1100 under the hood to provide a realistic preview of how your creation will look and behave on Brick 1100. This is useful for debugging and ensuring your creation works as expected once published.
 
 <SponsorAd />
 
-## Step-by-step guide
+## Quick start
 
-As these apps/games are developed using web techs, you can use any code editor of your choice (even a [Notepad](../win7simu/simulated/notepad.md) will do the job just fine). However, [Visual Studio Code](https://code.visualstudio.com/) is recommended as it offers a wide range of features and extensions, including this [Live Server](https://marketplace.visualstudio.com/items?itemName=yandeu.five-server) extension that enhances your development experience.
+Below are the general steps to start building your own apps and games and publish them to Brick 1100. We are going to use [Visual Studio Code](https://code.visualstudio.com/), a recommended code editor as it offers a wide range of features and extensions, including this [Live Server](https://marketplace.visualstudio.com/items?itemName=yandeu.five-server) extension that enhances your development experiences.
 
-Follow the steps below to get your first creation up and running on Brick 1100. Feel free to leave a comment or reach out on [Discord](https://discord.com/invite/6AQDnZa4Xm) if you need help or have any questions.
-
-<div style="text-align:center;font-size:4rem;margin: 4rem 0">
-🚧 Under construction
-</div>
-
-<!-- ### 1. Setup
+### 1. Setup
 
 - Install [Visual Studio Code](https://code.visualstudio.com/).
 - Install the [Live Server](https://marketplace.visualstudio.com/items?itemName=yandeu.five-server) extension in Visual Studio Code.
 - Create a [GitHub](https://github.com/) account if you don't have one.
 - Go to a directory repository:
   - [Brick 1100 Apps](https://github.com/Visnalize/brick-1100-apps) if you are building an app.
-  - [Brick 1100 Games](https://github.com/Visnalize/brick-1100-games) if you are building a game (under construction 🚧).
+  - [Brick 1100 Games](https://github.com/Visnalize/brick-1100-games) if you are building a game.
 - Fork the repository to your account.
 - Clone the forked repository to your Visual Studio Code.
 
-Now you are ready to start building!
-
 ### 2. Build
 
-- Create a new folder and name it as your app's name.
+- In your Visual Studio Code, create a new folder and name it as your app's name.
 - Write your app's code in the folder (you can refer to the existing apps for examples).
 - Once done, commit and push your code to your forked repository.
-- Create a pull request to original directory repository.
 
-### 3. Deploy -->
+### 3. Publish
+
+- Create a pull request to original directory repository.
+- Your pull request will be reviewed by the maintainers
+  - This step is mandatory to ensure the quality and security of the apps/games before getting published to Brick 1100 users.
+- Once approved, your pull request will be merged and your app will be available in Brick 1100 immediately.
+
+## In-depth guides
+
+Depending on what you are building, you can follow the respective in-depth guides below for detailed step-by-step instructions:
+
+- [Building an app](./builders/building-app.md)
+- [Building a game](./builders/building-game.md)
+
+## Best practices
+
+When building your apps and games, it is important to follow the best practices to ensure the quality and security of your creations. Check out the guide below for more details:
+
+- [Best practices](./builders/best-practices.md)
+
+## Support
+
+Feel free to leave a comment or reach out on [Discord](https://discord.com/invite/6AQDnZa4Xm) if you need help or have any questions.
