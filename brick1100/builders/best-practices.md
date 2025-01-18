@@ -20,6 +20,14 @@ This is a list of best practices to follow when building games/apps for [Brick 1
 
 Bridge 1100 provides the necessary means in most cases, although you may need to manually adjust your styles to make your creation fit Brick 1100's design in some cases. Make sure your creation looks and feels like it belongs on Brick 1100.
 
+### Ensure valid audio URLs <Badge text="Essential" type="danger" />
+
+When building games with audio, ensure that the audio URLs are __absolute__ and valid for the audio files to be loaded correctly and played back as expected on Brick 1100.
+
+:::tip Tip
+Refer to [this section](./building-game.md#_2-3-game-assets) for an example of how to use audio in your game.
+:::
+
 ### Use ES5 syntax <Badge text="Recommended" type="tip" />
 
 Brick 1100 relies on WebView to work. On older devices, ES6 or newer syntax may not be well-supported. To ensure compatibility with a wider range of devices, use ES5 syntax.

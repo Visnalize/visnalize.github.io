@@ -121,7 +121,7 @@ var charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#
 var password = "";
 ```
 
-- Next, we will leverage [Bridge 1100](../builders.md#bridge-1100) to listen for keypress and numpress events to handle the user's input:
+- Next, we will leverage [Bridge 1100](../builders.md#bridge-1100) to listen for `keypress` and `numpress` events to handle the user's input:
 
 ```js
 window.bridge.on("keypress", handleKeypress);
@@ -293,7 +293,7 @@ footer {
 Ensure your app's styling is __consistent__ with Brick 1100's visual as much as possible. This decides whether your app will be accepted or rejected during the review process.
 :::
 
-### 2.4. Preview your app (optional)
+### 2.4. Preview your app <Badge text="optional" type="info" />
 
 > _See main guide: [Using Brick 1100 Previewer](./using-previewer.md)_
 
